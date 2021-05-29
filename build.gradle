@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+group 'org.kd'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'io.reactivex.rxjava3', name: 'rxjava', version: '3.0.13-RC5'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
